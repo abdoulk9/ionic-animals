@@ -71,4 +71,17 @@ export class HomePage {
       'playing': false
     }
   ];
+
+
+private animalSound: any;
+  choseAnimal: any;
+
+animalScream(){
+  this.animalSound = new Audio();
+  //La source du son
+  this.animalSound.src = "assets" + this.choseAnimal.file;
+  this.animalSound.load();
+  this.animalSound.play();
+}
+
 }
